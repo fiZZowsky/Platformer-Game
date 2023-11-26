@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Trap
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -11,7 +13,7 @@ TagManager:
   - Terrain
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
@@ -55,4 +57,7 @@ TagManager:
     locked: 0
   - name: Terrain
     uniqueID: 1468888041
+    locked: 0
+  - name: Player
+    uniqueID: 2879488087
     locked: 0
