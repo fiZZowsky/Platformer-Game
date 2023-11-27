@@ -8,12 +8,18 @@ public class EnemyBehaviour : MonoBehaviour
     public GameObject pointB;
     private Rigidbody2D rb;
     private Transform currentPoint;
+    private Animator anim;
     [SerializeField] public float speed = 2f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         currentPoint = pointB.transform;
+        anim = GetComponent<Animator>();
+        if(anim.parameterCount != 0)
+        {
+            anim.SetBool("isRunning", true);
+        }
     }
 
     void Update()
