@@ -1269,6 +1269,7 @@ GameObject:
   - component: {fileID: 1427051024}
   - component: {fileID: 1427051023}
   - component: {fileID: 1427051027}
+  - component: {fileID: 1427051028}
   m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
@@ -1351,8 +1352,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1427051023}
-        m_TargetAssemblyTypeName: EndMenu, Assembly-CSharp
+      - m_Target: {fileID: 1427051028}
+        m_TargetAssemblyTypeName: QuitManager, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
@@ -1422,6 +1423,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1427051028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427051021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6caeeff95d122244b974d28cf5c1fd25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1428159000
 GameObject:
   m_ObjectHideFlags: 0
@@ -1841,6 +1854,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerNameField: {fileID: 1880342247}
+--- !u!1001 &651063113269428319
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2422156916389694645, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 722.6142
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422156916389694645, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 364.978
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422156916389694645, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.9147143
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422156916389694645, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422156916389694645, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422156916389694645, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422156916389694645, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422156916389694645, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422156916389694645, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422156916389694645, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8948241196611206672, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_Name
+      value: QuitManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
 --- !u!1001 &6220535060980972856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1906,3 +1976,4 @@ SceneRoots:
   - {fileID: 1809261805}
   - {fileID: 894424298}
   - {fileID: 6220535060980972856}
+  - {fileID: 651063113269428319}

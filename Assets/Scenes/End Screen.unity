@@ -394,6 +394,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &629010160
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2422156916389694645, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 722.6142
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422156916389694645, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 364.978
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422156916389694645, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.9147143
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422156916389694645, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422156916389694645, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422156916389694645, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422156916389694645, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422156916389694645, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422156916389694645, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422156916389694645, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8948241196611206672, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
+      propertyPath: m_Name
+      value: QuitManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf007e2d1084a1341be4dc37c3406166, type: 3}
 --- !u!1 &686890989
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,6 +956,7 @@ GameObject:
   - component: {fileID: 1831623721}
   - component: {fileID: 1831623720}
   - component: {fileID: 1831623724}
+  - component: {fileID: 1831623725}
   m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
@@ -981,8 +1039,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1831623720}
-        m_TargetAssemblyTypeName: EndMenu, Assembly-CSharp
+      - m_Target: {fileID: 1831623725}
+        m_TargetAssemblyTypeName: QuitManager, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
@@ -1052,6 +1110,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1831623725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831623718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6caeeff95d122244b974d28cf5c1fd25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1060,3 +1130,4 @@ SceneRoots:
   - {fileID: 1809261805}
   - {fileID: 894424298}
   - {fileID: 419845282}
+  - {fileID: 629010160}

@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Rigidbody2D rb;
     [SerializeField] Transform feet;
     [SerializeField] LayerMask terrainLayer;
+    [SerializeField] Joystick joystick;
     private Animator anim;
     private SpriteRenderer sprite;
     private PolygonCollider2D coll;
@@ -32,11 +33,25 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        dirX = Input.GetAxis("Horizontal");
-
-        if (Input.GetButtonDown("Jump"))
+        if (Application.isMobilePlatform)
         {
-            jump();
+            if (joystick.Horizontal >= .2f || joystick.Horizontal <= -.2f)
+            {
+                dirX = joystick.Horizontal;
+            }
+            else
+            {
+                dirX = 0f;
+            }
+        }
+        else
+        {
+            dirX = Input.GetAxis("Horizontal");
+
+            if (Input.GetButtonDown("Jump"))
+            {
+                jump();
+            }
         }
 
         UpdateAnimationState();
@@ -62,11 +77,11 @@ public class PlayerMovement : MonoBehaviour
             state = MovementState.idle;
         }
 
-        if(rb.velocity.y > .1f)
+        if (rb.velocity.y > .1f)
         {
             state = MovementState.jumping;
         }
-        else if(rb.velocity.y < -.1f)
+        else if (rb.velocity.y < -.1f)
         {
             state = MovementState.falling;
         }
@@ -79,7 +94,7 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(dirX * speed, rb.velocity.y);
     }
 
-    void jump()
+    public void jump()
     {
         if (isGrounded || jumpCount < extraJumps)
         {
